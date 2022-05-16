@@ -24,3 +24,11 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/ppn.csv
          -delimiter=';'
          -table=_module
          -filecolumns=id_module,ue,libelle_module;
+
+
+WbImport -file=./data/ppn.csv
+         -header=true
+         -delimiter=';'
+         -table=_programme
+         -schema=partie2
+         -filecolumns=id_module,%wb_skip%,%wb_skip%,coefficient,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,id_semestre;
