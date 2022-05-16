@@ -18,3 +18,10 @@ wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_inscriptions.cs
          -delimiter=';'
          -filecolumns=%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,ine,nom,prenom,date_naissance,sexe,nationalite,code_postal,ville
          -dateformat="yyyy-MM-dd";
+
+WbImport -file=./data/ppn.csv
+         -header=true
+         -delimiter=';'
+         -table=_module
+         -schema=partie1
+         -filecolumns=id_module,ue,libelle_module;
