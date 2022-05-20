@@ -1,40 +1,120 @@
+set schema 'partie2';
+
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_candidatures.csv
         -type=text
         -table=_individu
+        -mode=update,insert
         -delimiter=';'
         -filecolumns=$wb_skip$,$wb_skip$,$wb_skip$,nom,prenom,sexe,date_naissance,nationalite,code_postal,ville,$wb_skip$,$wb_skip$,$wb_skip$,ine
         -dateformat="yyyy-MM-dd";
         
-wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_candidatures.csv
-         -type=text
-         -table=_candidat
-         -delimiter=';'
-         -filecolumns=$wb_skip$,$wb_skip$,classement,$wb_skip$,$wb_skip$,$wb_skip$,$wb_skip$,$wb_skip$,$wb_skip$,$wb_skip$,$wb_skip$,boursier_lycee,profil_candidat,$wb_skip$,$wb_skip$,etablissement,ville_etablissement,dept_etablissement,$wb_skip$,niveau_etude,type_formation_prec,serie_prec,dominante_prec,specialite_prec,lv1,lv2
-         -dateformat="yyyy-MM-dd";
-
 wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_inscriptions.csv
          -type=text
          -table=_individu
+         -mode=update,insert
          -delimiter=';'
          -filecolumns=%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,ine,nom,prenom,date_naissance,sexe,nationalite,code_postal,ville
          -dateformat="yyyy-MM-dd";
-
+        
+wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_candidatures.csv
+         -type=text
+         -table=_candidat
+         -mode=insert,update
+         -delimiter=';'
+         -filecolumns=$wb_skip$,$wb_skip$,classement,$wb_skip$,$wb_skip$,$wb_skip$,$wb_skip$,$wb_skip$,$wb_skip$,$wb_skip$,$wb_skip$,boursier_lycee,profil_candidat,ine,$wb_skip$,etablissement,ville_etablissement,dept_etablissement,$wb_skip$,niveau_etude,type_formation_prec,serie_prec,dominante_prec,specialite_prec,lv1,lv2
+         -dateformat="yyyy-MM-dd";
+         
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/ppn.csv
-         -header=true
          -delimiter=';'
          -table=_module
+         -mode=update,insert
          -filecolumns=id_module,ue,libelle_module;
-
-
-WbImport -file=./data/ppn.csv
-         -header=true
+         
+wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_inscriptions.csv
+         -type=text
+         -table=_etudiant
+         -mode=update,insert
          -delimiter=';'
+         -filecolumns=%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,code_nip,ine,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,cat_socio_etu,cat_socio_parent,serie_bac,%wb_skip%,$wb_skip$,$wb_skip$,$wb_skip$,$wb_skip$,$wb_skip$,bourse_superieur
+         -dateformat="yyyy-MM-dd";
+         
+wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_candidatures.csv
+         -type=text
+         -table=_etudiant
+         -keycolumns='ine'
+         -mode=update
+         -delimiter=';'
+         -filecolumns=%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,boursier_superieur,%wb_skip%,ine,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,dominante_bac,special_bac,mention_bac,mois_annee_obtention_bac
+         -dateformat="yyyy-MM-dd";
+         
+wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
+         -type=text
+         -table=_semestre
+         -mode=insert,update
+         -delimiter=';'
+         -filecolumns=annee_univ,num_semestre,%wb_skip%;
+         
+wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s2.csv
+         -type=text
+         -table=_semestre
+         -mode=insert,update
+         -delimiter=';'
+         -filecolumns=annee_univ,num_semestre,%wb_skip%;
+         
+wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s3.csv
+         -type=text
+         -table=_semestre
+         -mode=insert,update
+         -delimiter=';'
+         -filecolumns=annee_univ,num_semestre,%wb_skip%;
+         
+wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s4.csv
+         -type=text
+         -table=_semestre
+         -mode=insert,update
+         -delimiter=';'
+         -filecolumns=annee_univ,num_semestre,%wb_skip%;
+         
+wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
+         -type=text
+         -table=_inscription
+         -mode=insert,update
+         -delimiter=';'
+         -filecolumns=%wb_skip%,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,groupe_tp;
+         
+wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s2.csv
+         -type=text
+         -table=_inscription
+         -mode=update,insert
+         -delimiter=';'
+         -filecolumns=%wb_skip%,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,groupe_tp;
+         
+wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s3.csv
+         -type=text
+         -table=_inscription
+         -mode=update,insert
+         -delimiter=';'
+         -filecolumns=%wb_skip%,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,groupe_tp;
+         
+wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s4.csv
+         -type=text
+         -table=_inscription
+         -mode=update,insert
+         -delimiter=';'
+         -filecolumns=%wb_skip%,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,groupe_tp;
+
+DELETE FROM _s_inscrire;  
+INSERT INTO _s_inscrire SELECT ine,code_nip FROM _etudiant;
+UPDATE _inscription SET ine = _s_inscrire.ine FROM _s_inscrire WHERE _inscription.code_nip = _s_inscrire.code_nip;
+
+wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/ppn.csv
+         -type=text
          -table=_programme
-         -schema=partie2
-         -filecolumns=id_module,%wb_skip%,%wb_skip%,coefficient,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,id_semestre;
+         -mode=update,insert
+         -delimiter=';'
+         -filecolumns=id_module,%wb_skip%,%wb_skip%,coefficient,%wb_skip%,%wb_skip%,%wb_skip%,num_semestre;
          
-         
-WbImport -file=./data/v_resu_s1.csv
+WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
          -header=true
          -delimiter=';'
          -table=_resultat
