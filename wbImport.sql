@@ -32,3 +32,11 @@ WbImport -file=./data/ppn.csv
          -table=_programme
          -schema=partie2
          -filecolumns=id_module,%wb_skip%,%wb_skip%,coefficient,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,id_semestre;
+         
+         
+WbImport -file=./data/v_resu_s1.csv
+         -header=true
+         -delimiter=';'
+         -table=_resultat
+         -schema=partie1
+         -filecolumns=%wb_skip%,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
