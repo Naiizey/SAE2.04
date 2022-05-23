@@ -109,13 +109,13 @@ wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s4.csv
 
 DELETE FROM _s_inscrire;  
 INSERT INTO _s_inscrire SELECT ine,code_nip FROM _etudiant;
-
-wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/ppn.csv
+wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_programme.csv
          -type=text
          -table=_programme
-         -mode=update,insert
+         -keycolumns=id_module
+         -mode=insert,update
          -delimiter=';'
-         -filecolumns=id_module,%wb_skip%,%wb_skip%,coefficient,%wb_skip%,%wb_skip%,%wb_skip%,num_semestre;
+         -filecolumns=annee_univ,num_semestre,id_module,coefficient;
          
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
          -header=true
