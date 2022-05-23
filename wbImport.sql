@@ -50,34 +50,30 @@ wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_candidatures.cs
 wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
          -type=text
          -table=_semestre
-         -keycolumns=num_semestre,annee_univ
          -mode=insert,update
          -delimiter=';'
-         -filecolumns=annee_univ,num_semestre,%wb_skip%;
+         -filecolumns=annee_univ,num_semestre;
          
 wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s2.csv
          -type=text
          -table=_semestre
-         -keycolumns=num_semestre,annee_univ
          -mode=insert,update
          -delimiter=';'
-         -filecolumns=annee_univ,num_semestre,%wb_skip%;
+         -filecolumns=annee_univ,num_semestre;
          
 wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s3.csv
          -type=text
          -table=_semestre
-         -keycolumns=num_semestre,annee_univ
          -mode=insert,update
          -delimiter=';'
-         -filecolumns=annee_univ,num_semestre,%wb_skip%;
+         -filecolumns=annee_univ,num_semestre;
          
 wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s4.csv
          -type=text
          -table=_semestre
-         -keycolumns=num_semestre,annee_univ
          -mode=insert,update
          -delimiter=';'
-         -filecolumns=annee_univ,num_semestre,%wb_skip%;
+         -filecolumns=annee_univ,num_semestre;
          
 wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
          -type=text
@@ -109,10 +105,11 @@ wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s4.csv
 
 DELETE FROM _s_inscrire;  
 INSERT INTO _s_inscrire SELECT ine,code_nip FROM _etudiant;
+
 wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_programme.csv
          -type=text
          -table=_programme
-         -keycolumns=id_module
+         -keycolumns=id_module,annee_univ,num_semestre
          -mode=insert,update
          -delimiter=';'
          -filecolumns=annee_univ,num_semestre,id_module,coefficient;
