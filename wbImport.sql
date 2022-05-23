@@ -109,7 +109,6 @@ wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s4.csv
 
 DELETE FROM _s_inscrire;  
 INSERT INTO _s_inscrire SELECT ine,code_nip FROM _etudiant;
-UPDATE _inscription SET ine = _s_inscrire.ine FROM _s_inscrire WHERE _inscription.code_nip = _s_inscrire.code_nip;
 
 wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/ppn.csv
          -type=text
@@ -200,7 +199,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
          -delimiter=';'
          -table=_resultat_tmp
          -constantValues=id_module=m1206
-         -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
+         -filecolumns=annee_univ,num_semestre,code_nip,%wb_sk"ip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
          -header=true
