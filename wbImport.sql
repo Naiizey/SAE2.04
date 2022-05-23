@@ -122,5 +122,5 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -schema=partie2
+         -constantValues=id_module=m1101
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
