@@ -93,6 +93,16 @@ CREATE TABLE _s_inscrire(
     CONSTRAINT _s_inscrire_pk PRIMARY KEY (ine, code_nip)
 );
 
+CREATE TABLE _resultat_tmp(
+    moyenne varchar(5),
+    id_module char(5),
+    code_nip varchar(32),
+    num_semestre varchar(5),
+    annee_univ char(9),
+    CONSTRAINT _resultat_pk PRIMARY KEY (id_module, code_nip, num_semestre, annee_univ)
+);
+
+
 ALTER TABLE _resultat ADD
     CONSTRAINT _resultat_id_module_fk FOREIGN KEY (id_module) REFERENCES _module(id_module);
 ALTER TABLE _resultat ADD
