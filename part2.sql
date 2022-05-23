@@ -4,7 +4,7 @@ CREATE SCHEMA partie2;
 SET SCHEMA 'partie2';
 
 CREATE TABLE _individu(
-    id_individu serial,
+    ine varchar(32),
     nom varchar(32) not null,
     prenom varchar(32) not null,
     date_naissance date not null,
@@ -12,25 +12,25 @@ CREATE TABLE _individu(
     ville varchar(50),
     sexe char(1) not null,
     nationalite varchar(32) not null,
-    ine varchar(32),
-    CONSTRAINT _individu_pk PRIMARY KEY (id_individu)
+    CONSTRAINT _individu_pk PRIMARY KEY (ine)
 );
 
 CREATE TABLE _etudiant(
     code_nip varchar(32),
-    cat_socio_etu varchar(32) not null,
-    cat_socio_parent varchar(32) not null,
-    bourse_superieur boolean not null,
-    mention_bac varchar(32) not null,
-    serie_bac varchar(32) not null,
-    domainante_bac varchar(32) not null,
-    special_bac varchar(32) not null,
-    mois_annee_obtention_bac char(7),
+    cat_socio_etu varchar(50),
+    cat_socio_parent varchar(50),
+    bourse_superieur varchar(50),
+    mention_bac varchar(32),
+    serie_bac varchar(32),
+    dominante_bac varchar(100),
+    special_bac varchar(100),
+    mois_annee_obtention_bac varchar(20),
+    ine varchar(32),
     CONSTRAINT _etudiant_pk PRIMARY KEY (code_nip)
 );
 
 CREATE TABLE _candidat(
-    no_candidat serial,
+    ine varchar(32),
     classement varchar(50) null,
     boursier_lycee varchar(50) not null,
     profil_candidat varchar(75) not null,
@@ -44,22 +44,23 @@ CREATE TABLE _candidat(
     specialite_prec varchar(100),
     LV1 varchar(50),
     LV2 varchar(50),
-    CONSTRAINT _candidat_pk PRIMARY KEY (no_candidat)
+    CONSTRAINT _candidat_pk PRIMARY KEY (ine)
 );
 
 CREATE TABLE _inscription(
-    groupe_tp char(2) not null,
-    amenagement_evaluation varchar(50) not null,
+    groupe_tp char(2),
+    amenagement_evaluation varchar(50),
     code_nip varchar(32),
-    id_semestre int,
-    CONSTRAINT _inscription_pk PRIMARY KEY (code_nip, id_semestre)
+    num_semestre varchar(5),
+    annee_univ char(9),
+    ine varchar(32),
+    CONSTRAINT _inscription_pk PRIMARY KEY (code_nip, num_semestre, annee_univ)
 );
 
 CREATE TABLE _semestre(
-    id_semestre int,
-    num_semestre char(5) not null,
-    annee_univ char(9) not null,
-    CONSTRAINT _semestre_pk PRIMARY KEY (id_semestre)
+    num_semestre varchar(5),
+    annee_univ char(9),
+    CONSTRAINT _semestre_pk PRIMARY KEY (num_semestre,annee_univ)
 );
 
 CREATE TABLE _module(
@@ -73,27 +74,23 @@ CREATE TABLE _resultat(
     moyenne double precision not null,
     id_module char(5),
     code_nip varchar(32),
-    id_semestre int,
-    CONSTRAINT _resultat_pk PRIMARY KEY (id_module, code_nip, id_semestre)
+    num_semestre varchar(5),
+    annee_univ char(9),
+    CONSTRAINT _resultat_pk PRIMARY KEY (id_module, code_nip, num_semestre, annee_univ)
 );
 
 CREATE TABLE _programme(
     coefficient double precision not null,
     id_module char(5),
-    id_semestre int,
-    CONSTRAINT _programme_pk PRIMARY KEY (id_module, id_semestre)
-);
-
-CREATE TABLE _postuler(
-    id_individu int,
-    no_candidat int,
-    CONSTRAINT _postuler_pk PRIMARY KEY (id_individu, no_candidat)
+    num_semestre varchar(5),
+    annee_univ char(9),
+    CONSTRAINT _programme_pk PRIMARY KEY (id_module, num_semestre, annee_univ)
 );
 
 CREATE TABLE _s_inscrire(
-    id_individu int,
+    ine varchar(32),
     code_nip varchar(32),
-    CONSTRAINT _s_inscrire_pk PRIMARY KEY (id_individu, code_nip)
+    CONSTRAINT _s_inscrire_pk PRIMARY KEY (ine, code_nip)
 );
 
 ALTER TABLE _resultat ADD
@@ -101,24 +98,27 @@ ALTER TABLE _resultat ADD
 ALTER TABLE _resultat ADD
     CONSTRAINT _resultat_code_nip_fk FOREIGN KEY (code_nip) REFERENCES _etudiant(code_nip);
 ALTER TABLE _resultat ADD
-    CONSTRAINT _resultat_id_semestre_fk FOREIGN KEY (id_semestre) REFERENCES _semestre(id_semestre);
+    CONSTRAINT _resultat_num_semestre_a_univ_fk FOREIGN KEY (num_semestre, annee_univ) REFERENCES _semestre(num_semestre, annee_univ);
     
 ALTER TABLE _programme ADD
     CONSTRAINT _programme_id_module_fk FOREIGN KEY (id_module) REFERENCES _module(id_module);
 ALTER TABLE _programme ADD
-    CONSTRAINT _programme_id_semestre_fk FOREIGN KEY (id_semestre) REFERENCES _semestre(id_semestre); 
+    CONSTRAINT _programme_num_semestre_a_univ_fk FOREIGN KEY (num_semestre, annee_univ) REFERENCES _semestre(num_semestre, annee_univ);
+
+ALTER TABLE _inscription ADD
+    CONSTRAINT _inscription_ine_fk FOREIGN KEY (ine) REFERENCES _individu(ine);
 
 ALTER TABLE _inscription ADD
     CONSTRAINT _inscription_code_nip_fk FOREIGN KEY (code_nip) REFERENCES _etudiant(code_nip);
 ALTER TABLE _inscription ADD
-    CONSTRAINT _inscription_id_semestre_fk FOREIGN KEY (id_semestre) REFERENCES _semestre(id_semestre);
-
-ALTER TABLE _postuler ADD
-    CONSTRAINT _postuler_id_individu_fk FOREIGN KEY (id_individu) REFERENCES _individu(id_individu);
-ALTER TABLE _postuler ADD
-    CONSTRAINT _postuler_no_candidat_fk FOREIGN KEY (no_candidat) REFERENCES _candidat(no_candidat);
+    CONSTRAINT _inscription_num_semestre_a_univ_fk FOREIGN KEY (num_semestre, annee_univ) REFERENCES _semestre(num_semestre, annee_univ);
     
 ALTER TABLE _s_inscrire ADD
-    CONSTRAINT _s_inscrire_id_individu_fk FOREIGN KEY (id_individu) REFERENCES _individu(id_individu);
+    CONSTRAINT _s_inscrire_ine_fk FOREIGN KEY (ine) REFERENCES _individu(ine);
 ALTER TABLE _s_inscrire ADD
     CONSTRAINT _s_inscrire_code_nip_fk FOREIGN KEY (code_nip) REFERENCES _etudiant(code_nip);
+
+ALTER TABLE _etudiant ADD
+    CONSTRAINT _etudiant_ine_fk FOREIGN KEY (ine) REFERENCES _individu(ine);
+ALTER TABLE _candidat ADD
+    CONSTRAINT _candidat_ine_fk FOREIGN KEY (ine) REFERENCES _individu(ine);
