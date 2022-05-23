@@ -99,7 +99,7 @@ CREATE TABLE _resultat_tmp(
     code_nip varchar(32),
     num_semestre varchar(5),
     annee_univ char(9),
-    CONSTRAINT _resultat_pk PRIMARY KEY (id_module, code_nip, num_semestre, annee_univ)
+    CONSTRAINT _resultat_tmp_pk PRIMARY KEY (id_module, code_nip, num_semestre, annee_univ)
 );
 
 
