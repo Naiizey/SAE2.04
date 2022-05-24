@@ -113,6 +113,15 @@ wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_programme.csv
          -mode=insert,update
          -delimiter=';'
          -filecolumns=annee_univ,num_semestre,id_module,coefficient;
+         
+CREATE TABLE _resultat_tmp(
+    moyenne varchar(5),
+    id_module varchar(7),
+    code_nip varchar(32),
+    num_semestre varchar(5),
+    annee_univ char(9),
+    CONSTRAINT _resultat_tmp_pk PRIMARY KEY (id_module, code_nip, num_semestre, annee_univ)
+);
 
 DELETE FROM _resultat_tmp;
       
@@ -570,5 +579,5 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s4.csv
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 DELETE FROM _resultat;
-INSERT INTO _resultat SELECT CAST(replace(replace(moyenne,'.',','),',','.') as double precision), id_module, code_nip, num_semestre, annee_univ from _resultat_tmp where moyenne != '~' AND moyenne != '-c-' AND moyenne != 'NI';
-DELETE _resultat_tmp;
+INSERT INTO _resultat SELECT CAST(replace(moyenne,',','.') as double precision), id_module, code_nip, num_semestre, annee_univ from _resultat_tmp where moyenne != '~' AND moyenne != '-c-' AND moyenne != 'NI';
+DROP TABLE _resultat_tmp CASCADE;
