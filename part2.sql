@@ -33,12 +33,12 @@ CREATE TABLE _candidat(
     ine varchar(32),
     classement varchar(50) null,
     boursier_lycee varchar(50) not null,
-    profil_candidat varchar(75) not null,
-    etablissement varchar(75),
-    dept_etablissement varchar(75),
-    ville_etablissement varchar(75),
-    niveau_etude varchar(75),
-    type_formation_prec varchar(75),
+    profil_candidat varchar(100) not null,
+    etablissement varchar(100),
+    dept_etablissement varchar(100),
+    ville_etablissement varchar(100),
+    niveau_etude varchar(100),
+    type_formation_prec varchar(100),
     serie_prec varchar(100),
     dominante_prec varchar(100),
     specialite_prec varchar(100),
@@ -72,7 +72,7 @@ CREATE TABLE _module(
 
 CREATE TABLE _resultat(
     moyenne double precision not null,
-    id_module char(5),
+    id_module varchar(7),
     code_nip varchar(32),
     num_semestre varchar(5),
     annee_univ char(9),
@@ -81,7 +81,7 @@ CREATE TABLE _resultat(
 
 CREATE TABLE _programme(
     coefficient double precision not null,
-    id_module char(5),
+    id_module varchar(7),
     num_semestre varchar(5),
     annee_univ char(9),
     CONSTRAINT _programme_pk PRIMARY KEY (id_module, num_semestre, annee_univ)
@@ -92,16 +92,6 @@ CREATE TABLE _s_inscrire(
     code_nip varchar(32),
     CONSTRAINT _s_inscrire_pk PRIMARY KEY (ine, code_nip)
 );
-
-CREATE TABLE _resultat_tmp(
-    moyenne varchar(5),
-    id_module char(5),
-    code_nip varchar(32),
-    num_semestre varchar(5),
-    annee_univ char(9),
-    CONSTRAINT _resultat_tmp_pk PRIMARY KEY (id_module, code_nip, num_semestre, annee_univ)
-);
-
 
 ALTER TABLE _resultat ADD
     CONSTRAINT _resultat_id_module_fk FOREIGN KEY (id_module) REFERENCES _module(id_module);
