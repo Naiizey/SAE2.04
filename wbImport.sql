@@ -113,13 +113,15 @@ wbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_programme.csv
          -mode=insert,update
          -delimiter=';'
          -filecolumns=annee_univ,num_semestre,id_module,coefficient;
-         
+
+DELETE FROM _resultat_tmp;
+      
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
          -mode=insert,update
-         -constantValues=id_module=m1101
+         -constantValues=id_module=M1101
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
@@ -127,7 +129,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
          -delimiter=';'
          -table=_resultat_tmp
          -mode=insert,update
-         -constantValues=id_module=m1102
+         -constantValues=id_module=M1102
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
@@ -135,7 +137,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
          -delimiter=';'
          -table=_resultat_tmp
          -mode=insert,update
-         -constantValues=id_module=m1103
+         -constantValues=id_module=M1103
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
@@ -143,7 +145,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
          -delimiter=';'
          -table=_resultat_tmp
          -mode=insert,update
-         -constantValues=id_module=m1104
+         -constantValues=id_module=M1104
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
@@ -151,7 +153,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
          -delimiter=';'
          -table=_resultat_tmp
          -mode=insert,update
-         -constantValues=id_module=m1105
+         -constantValues=id_module=M1105
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
@@ -159,7 +161,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
          -delimiter=';'
          -table=_resultat_tmp
          -mode=insert,update
-         -constantValues=id_module=m1106
+         -constantValues=id_module=M1106
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
@@ -167,7 +169,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
          -delimiter=';'
          -table=_resultat_tmp
          -mode=insert,update
-         -constantValues=id_module=m1201
+         -constantValues=id_module=M1201
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
@@ -175,7 +177,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
          -delimiter=';'
          -table=_resultat_tmp
          -mode=insert,update
-         -constantValues=id_module=m1202
+         -constantValues=id_module=M1202
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
@@ -183,7 +185,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
          -delimiter=';'
          -table=_resultat_tmp
          -mode=insert,update
-         -constantValues=id_module=m1203
+         -constantValues=id_module=M1203
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
@@ -191,7 +193,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
          -delimiter=';'
          -table=_resultat_tmp
          -mode=insert,update
-         -constantValues=id_module=m1204
+         -constantValues=id_module=M1204
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
@@ -199,7 +201,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
          -delimiter=';'
          -table=_resultat_tmp
          -mode=insert,update
-         -constantValues=id_module=m1205
+         -constantValues=id_module=M1205
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
@@ -207,7 +209,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
          -delimiter=';'
          -table=_resultat_tmp
          -mode=insert,update
-         -constantValues=id_module=m1206
+         -constantValues=id_module=M1206
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
@@ -215,14 +217,14 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s1.csv
          -delimiter=';'
          -table=_resultat_tmp
          -mode=insert,update
-         -constantValues=id_module=m1207
+         -constantValues=id_module=M1207
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s2.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m2101
+         -constantValues=id_module=M2101
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -230,7 +232,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s2.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m2102
+         -constantValues=id_module=M2102
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -238,7 +240,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s2.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m2103
+         -constantValues=id_module=M2103
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -246,7 +248,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s2.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m2104
+         -constantValues=id_module=M2104
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -254,7 +256,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s2.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m2105
+         -constantValues=id_module=M2105
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -262,7 +264,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s2.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m2106
+         -constantValues=id_module=M2106
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -270,7 +272,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s2.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m2107
+         -constantValues=id_module=M2107
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -278,7 +280,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s2.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m2201
+         -constantValues=id_module=M2201
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -286,7 +288,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s2.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m2202
+         -constantValues=id_module=M2202
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -294,7 +296,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s2.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m2203
+         -constantValues=id_module=M2203
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -302,7 +304,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s2.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m2204
+         -constantValues=id_module=M2204
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -310,7 +312,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s2.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m2205
+         -constantValues=id_module=M2205
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -318,7 +320,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s2.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m2206
+         -constantValues=id_module=M2206
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -326,7 +328,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s2.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m2207
+         -constantValues=id_module=M2207
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -336,105 +338,120 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s3.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m3101
+         -constantValues=id_module=M3101
+         -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s3.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m3102
+         -constantValues=id_module=M3102
+         -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s3.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m3103
+         -constantValues=id_module=M3103
+         -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s3.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m3104
+         -constantValues=id_module=M3104
+         -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s3.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m3105
+         -constantValues=id_module=M3105
+         -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s3.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m3106c
+         -constantValues=id_module=M3106C
+         -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s3.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m3201
+         -constantValues=id_module=M3201
+         -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s3.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m3202c
+         -constantValues=id_module=M3202C
+         -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s3.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m3203
+         -constantValues=id_module=M3203
+         -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s3.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m3204
+         -constantValues=id_module=M3204
+         -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s3.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m3205
+         -constantValues=id_module=M3205
+         -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s3.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m3206
+         -constantValues=id_module=M3206
+         -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s3.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m3301
+         -constantValues=id_module=M3301
+         -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s3.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m3302
+         -constantValues=id_module=M3302
+         -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s3.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m3303
+         -constantValues=id_module=M3303
+         -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
 
@@ -444,7 +461,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s4.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m4101c
+         -constantValues=id_module=M4101C
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -452,7 +469,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s4.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m4102c
+         -constantValues=id_module=M4102C
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -460,7 +477,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s4.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m4103c
+         -constantValues=id_module=M4103C
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -468,7 +485,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s4.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m4104c
+         -constantValues=id_module=M4104C
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -476,7 +493,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s4.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m4105c
+         -constantValues=id_module=M4105C
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -484,7 +501,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s4.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m41os1
+         -constantValues=id_module=M41OS1
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -492,7 +509,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s4.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m41os2
+         -constantValues=id_module=M41OS2
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -500,7 +517,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s4.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m41os3
+         -constantValues=id_module=M41OS3
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -508,7 +525,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s4.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m4106
+         -constantValues=id_module=M4106
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -516,7 +533,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s4.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m4201c
+         -constantValues=id_module=M4201C
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -524,7 +541,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s4.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m4202c
+         -constantValues=id_module=M4202C
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -532,7 +549,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s4.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m4203
+         -constantValues=id_module=M4203
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -540,7 +557,7 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s4.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m4204
+         -constantValues=id_module=M4204
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
 
@@ -548,6 +565,10 @@ WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_resu_s4.csv
          -header=true
          -delimiter=';'
          -table=_resultat_tmp
-         -constantValues=id_module=m4301
+         -constantValues=id_module=M4301
          -mode=insert,update
          -filecolumns=annee_univ,num_semestre,code_nip,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,%wb_skip%,moyenne;
+
+DELETE FROM _resultat;
+INSERT INTO _resultat SELECT CAST(replace(replace(moyenne,'.',','),',','.') as double precision), id_module, code_nip, num_semestre, annee_univ from _resultat_tmp where moyenne != '~' AND moyenne != '-c-' AND moyenne != 'NI';
+DELETE _resultat_tmp;
