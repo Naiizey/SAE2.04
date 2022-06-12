@@ -1,0 +1,456 @@
+count;Moyenne des moyennes;id_module;cat_socio_parent
+1;16.38;M1101;Retraité ancien agriculteur exploitant
+2;13.74;M1101;Retraité  cadre-profession intermediaire
+2;12.66;M1101;Retraité cadre
+5;12.28;M1101;Agriculteur exploitant
+6;12.15;M1101;Commercant et assimile
+18;11.99;M1101;Ouvrier qualifie
+4;11.88;M1101;Ouvrier non qualifie
+3;11.88;M1101;Policier et militaire
+5;11.46;M1101;Profession liberale
+7;11.45;M1101;Artisan
+10;11.37;M1101;Person. service direct aux particuliers
+6;11.28;M1101;Personne sans activite professionnelle
+2;11.11;M1101;Ouvriers qualifiés manutention magasin
+19;10.93;M1101;Cadre administratif et commercial d'entr
+27;10.87;M1101;Ingenieur cadre technique d'entreprise
+10;10.83;M1101;Profession interm sante et  trav. social
+3;10.56;M1101;Retraité ancien  employé et ouvrier
+10;10.41;M1101;Employe de commerce
+1;10.25;M1101;Chef entreprise 10 salaries ou plus
+9;10.23;M1101;Ouvriers qualifiés de type industriel
+14;10.20;M1101;Employe civil-agent de service de la FP
+13;10.10;M1101;Cadre de la fonction publique
+2;9.93;M1101;Retraité employé
+9;9.92;M1101;Profession interm adm de la fonction pub
+22;9.88;M1101;Technicien
+1;9.86;M1101;Retraité profession intermédiaire
+20;9.73;M1101;Professeur, profession scientifique
+10;9.66;M1101;Employe administratif d'entreprise
+6;9.63;M1101;Non renseigne (inconnu)
+1;9.53;M1101;Ouvriers non qualifiés type industrie
+3;9.21;M1101;Sans profession -60 ans (hors retraité)
+1;9.13;M1101;Ouvriers qualifiés de type artisanal
+8;8.74;M1101;Contremaitre-agent de maitrise
+7;8.70;M1101;Profession interm adm et commerc. entrep
+2;7.79;M1101;Retraité artisan-commerce-chef entrepris
+1;18.11;M1102;Retraité ancien agriculteur exploitant
+2;15.47;M1102;Retraité cadre
+1;14.96;M1102;Ouvriers non qualifiés type industrie
+2;14.30;M1102;Ouvriers qualifiés manutention magasin
+3;14.01;M1102;Policier et militaire
+4;13.74;M1102;Ouvrier non qualifie
+2;13.74;M1102;Retraité  cadre-profession intermediaire
+9;13.67;M1102;Ouvriers qualifiés de type industriel
+6;13.57;M1102;Personne sans activite professionnelle
+5;13.41;M1102;Agriculteur exploitant
+2;13.10;M1102;Retraité employé
+10;13.00;M1102;Profession interm sante et  trav. social
+5;12.99;M1102;Profession liberale
+7;12.73;M1102;Artisan
+6;12.68;M1102;Commercant et assimile
+27;12.65;M1102;Ingenieur cadre technique d'entreprise
+1;12.46;M1102;Chef entreprise 10 salaries ou plus
+19;12.43;M1102;Cadre administratif et commercial d'entr
+10;12.25;M1102;Person. service direct aux particuliers
+17;12.19;M1102;Ouvrier qualifie
+22;12.08;M1102;Technicien
+7;12.05;M1102;Profession interm adm et commerc. entrep
+2;11.95;M1102;Retraité artisan-commerce-chef entrepris
+13;11.85;M1102;Cadre de la fonction publique
+10;11.82;M1102;Employe administratif d'entreprise
+10;11.76;M1102;Employe de commerce
+20;11.62;M1102;Professeur, profession scientifique
+3;11.35;M1102;Sans profession -60 ans (hors retraité)
+14;11.29;M1102;Employe civil-agent de service de la FP
+6;10.79;M1102;Non renseigne (inconnu)
+3;10.67;M1102;Retraité ancien  employé et ouvrier
+1;10.29;M1102;Ouvriers qualifiés de type artisanal
+9;10.20;M1102;Profession interm adm de la fonction pub
+8;9.96;M1102;Contremaitre-agent de maitrise
+1;9.33;M1102;Retraité profession intermédiaire
+1;18.75;M1103;Retraité ancien agriculteur exploitant
+1;17.10;M1103;Ouvriers non qualifiés type industrie
+2;17.05;M1103;Retraité  cadre-profession intermediaire
+2;15.73;M1103;Retraité cadre
+4;14.48;M1103;Ouvrier non qualifie
+2;14.20;M1103;Ouvriers qualifiés manutention magasin
+3;14.03;M1103;Policier et militaire
+5;13.91;M1103;Agriculteur exploitant
+6;13.75;M1103;Personne sans activite professionnelle
+5;13.75;M1103;Profession liberale
+10;12.91;M1103;Profession interm sante et  trav. social
+6;12.43;M1103;Commercant et assimile
+10;12.33;M1103;Person. service direct aux particuliers
+27;11.82;M1103;Ingenieur cadre technique d'entreprise
+9;11.80;M1103;Ouvriers qualifiés de type industriel
+7;11.79;M1103;Artisan
+19;11.61;M1103;Cadre administratif et commercial d'entr
+18;11.58;M1103;Ouvrier qualifie
+3;11.52;M1103;Sans profession -60 ans (hors retraité)
+6;11.44;M1103;Non renseigne (inconnu)
+13;11.32;M1103;Cadre de la fonction publique
+2;11.10;M1103;Retraité employé
+10;10.81;M1103;Employe de commerce
+22;10.74;M1103;Technicien
+20;10.69;M1103;Professeur, profession scientifique
+1;10.45;M1103;Chef entreprise 10 salaries ou plus
+8;9.97;M1103;Contremaitre-agent de maitrise
+7;9.89;M1103;Profession interm adm et commerc. entrep
+10;9.40;M1103;Employe administratif d'entreprise
+9;9.27;M1103;Profession interm adm de la fonction pub
+2;9.03;M1103;Retraité artisan-commerce-chef entrepris
+14;8.91;M1103;Employe civil-agent de service de la FP
+3;8.15;M1103;Retraité ancien  employé et ouvrier
+1;7.80;M1103;Retraité profession intermédiaire
+1;6.55;M1103;Ouvriers qualifiés de type artisanal
+1;16.11;M1104;Retraité ancien agriculteur exploitant
+1;14.71;M1104;Ouvriers qualifiés de type artisanal
+2;13.84;M1104;Retraité cadre
+2;13.30;M1104;Ouvriers qualifiés manutention magasin
+5;13.17;M1104;Profession liberale
+2;13.17;M1104;Retraité  cadre-profession intermediaire
+2;12.75;M1104;Retraité employé
+3;12.59;M1104;Policier et militaire
+3;12.55;M1104;Sans profession -60 ans (hors retraité)
+1;12.50;M1104;Ouvriers non qualifiés type industrie
+1;12.33;M1104;Retraité profession intermédiaire
+6;12.18;M1104;Personne sans activite professionnelle
+4;11.76;M1104;Ouvrier non qualifie
+10;11.62;M1104;Employe de commerce
+10;11.49;M1104;Profession interm sante et  trav. social
+9;11.37;M1104;Ouvriers qualifiés de type industriel
+27;11.32;M1104;Ingenieur cadre technique d'entreprise
+19;11.26;M1104;Cadre administratif et commercial d'entr
+6;11.19;M1104;Non renseigne (inconnu)
+8;11.08;M1104;Contremaitre-agent de maitrise
+5;10.96;M1104;Agriculteur exploitant
+7;10.78;M1104;Artisan
+10;10.66;M1104;Person. service direct aux particuliers
+7;10.66;M1104;Profession interm adm et commerc. entrep
+6;10.59;M1104;Commercant et assimile
+18;10.51;M1104;Ouvrier qualifie
+20;10.06;M1104;Professeur, profession scientifique
+22;10.02;M1104;Technicien
+3;9.85;M1104;Retraité ancien  employé et ouvrier
+2;9.41;M1104;Retraité artisan-commerce-chef entrepris
+10;9.13;M1104;Employe administratif d'entreprise
+14;9.09;M1104;Employe civil-agent de service de la FP
+13;9.03;M1104;Cadre de la fonction publique
+1;8.38;M1104;Chef entreprise 10 salaries ou plus
+9;8.30;M1104;Profession interm adm de la fonction pub
+1;17.00;M1105;Retraité ancien agriculteur exploitant
+2;16.25;M1105;Retraité  cadre-profession intermediaire
+1;16.00;M1105;Chef entreprise 10 salaries ou plus
+1;15.31;M1105;Ouvriers non qualifiés type industrie
+2;14.57;M1105;Retraité artisan-commerce-chef entrepris
+2;14.57;M1105;Retraité cadre
+18;14.35;M1105;Ouvrier qualifie
+10;14.24;M1105;Profession interm sante et  trav. social
+3;14.06;M1105;Policier et militaire
+6;14.02;M1105;Commercant et assimile
+4;13.90;M1105;Ouvrier non qualifie
+7;13.83;M1105;Artisan
+6;13.75;M1105;Personne sans activite professionnelle
+14;13.71;M1105;Employe civil-agent de service de la FP
+3;13.68;M1105;Retraité ancien  employé et ouvrier
+13;13.50;M1105;Cadre de la fonction publique
+27;13.37;M1105;Ingenieur cadre technique d'entreprise
+5;13.36;M1105;Profession liberale
+2;13.28;M1105;Retraité employé
+22;13.21;M1105;Technicien
+20;13.07;M1105;Professeur, profession scientifique
+7;12.87;M1105;Profession interm adm et commerc. entrep
+10;12.81;M1105;Person. service direct aux particuliers
+9;12.77;M1105;Ouvriers qualifiés de type industriel
+5;12.69;M1105;Agriculteur exploitant
+8;12.58;M1105;Contremaitre-agent de maitrise
+19;12.57;M1105;Cadre administratif et commercial d'entr
+10;12.49;M1105;Employe de commerce
+2;12.38;M1105;Ouvriers qualifiés manutention magasin
+3;12.34;M1105;Sans profession -60 ans (hors retraité)
+9;12.31;M1105;Profession interm adm de la fonction pub
+6;12.30;M1105;Non renseigne (inconnu)
+10;11.80;M1105;Employe administratif d'entreprise
+1;11.69;M1105;Retraité profession intermédiaire
+1;11.31;M1105;Ouvriers qualifiés de type artisanal
+1;17.00;M1106;Chef entreprise 10 salaries ou plus
+6;15.54;M1106;Commercant et assimile
+2;15.50;M1106;Retraité artisan-commerce-chef entrepris
+5;15.25;M1106;Profession liberale
+14;15.11;M1106;Employe civil-agent de service de la FP
+10;14.95;M1106;Profession interm sante et  trav. social
+2;14.88;M1106;Retraité  cadre-profession intermediaire
+27;14.85;M1106;Ingenieur cadre technique d'entreprise
+6;14.54;M1106;Personne sans activite professionnelle
+20;14.38;M1106;Professeur, profession scientifique
+10;14.35;M1106;Person. service direct aux particuliers
+1;14.00;M1106;Retraité ancien agriculteur exploitant
+10;14.00;M1106;Employe de commerce
+7;13.89;M1106;Profession interm adm et commerc. entrep
+6;13.88;M1106;Non renseigne (inconnu)
+3;13.83;M1106;Sans profession -60 ans (hors retraité)
+10;13.80;M1106;Employe administratif d'entreprise
+2;13.75;M1106;Retraité cadre
+22;13.70;M1106;Technicien
+19;13.70;M1106;Cadre administratif et commercial d'entr
+18;13.54;M1106;Ouvrier qualifie
+3;13.50;M1106;Policier et militaire
+9;13.39;M1106;Profession interm adm de la fonction pub
+13;13.29;M1106;Cadre de la fonction publique
+7;13.21;M1106;Artisan
+8;13.03;M1106;Contremaitre-agent de maitrise
+1;13.00;M1106;Retraité profession intermédiaire
+2;13.00;M1106;Ouvriers qualifiés manutention magasin
+1;13.00;M1106;Ouvriers qualifiés de type artisanal
+2;12.75;M1106;Retraité employé
+4;12.63;M1106;Ouvrier non qualifie
+9;12.44;M1106;Ouvriers qualifiés de type industriel
+5;12.20;M1106;Agriculteur exploitant
+3;11.17;M1106;Retraité ancien  employé et ouvrier
+1;11.00;M1106;Ouvriers non qualifiés type industrie
+1;19.21;M1201;Retraité ancien agriculteur exploitant
+2;16.30;M1201;Retraité employé
+2;16.28;M1201;Retraité cadre
+6;15.66;M1201;Personne sans activite professionnelle
+5;14.72;M1201;Agriculteur exploitant
+6;14.53;M1201;Non renseigne (inconnu)
+2;14.51;M1201;Retraité  cadre-profession intermediaire
+19;14.36;M1201;Cadre administratif et commercial d'entr
+3;14.05;M1201;Policier et militaire
+9;13.91;M1201;Ouvriers qualifiés de type industriel
+27;13.89;M1201;Ingenieur cadre technique d'entreprise
+5;13.83;M1201;Profession liberale
+20;13.81;M1201;Professeur, profession scientifique
+6;13.76;M1201;Commercant et assimile
+9;13.71;M1201;Profession interm adm de la fonction pub
+1;13.65;M1201;Retraité profession intermédiaire
+10;13.59;M1201;Employe administratif d'entreprise
+4;13.51;M1201;Ouvrier non qualifie
+2;13.33;M1201;Ouvriers qualifiés manutention magasin
+10;13.29;M1201;Employe de commerce
+17;13.19;M1201;Ouvrier qualifie
+7;12.94;M1201;Artisan
+10;12.80;M1201;Profession interm sante et  trav. social
+10;12.78;M1201;Person. service direct aux particuliers
+14;12.62;M1201;Employe civil-agent de service de la FP
+3;12.60;M1201;Retraité ancien  employé et ouvrier
+3;12.55;M1201;Sans profession -60 ans (hors retraité)
+22;12.47;M1201;Technicien
+8;12.33;M1201;Contremaitre-agent de maitrise
+7;12.22;M1201;Profession interm adm et commerc. entrep
+13;12.09;M1201;Cadre de la fonction publique
+1;11.25;M1201;Chef entreprise 10 salaries ou plus
+1;10.85;M1201;Ouvriers qualifiés de type artisanal
+2;10.75;M1201;Retraité artisan-commerce-chef entrepris
+1;10.10;M1201;Ouvriers non qualifiés type industrie
+10;14.51;M1202;Employe administratif d'entreprise
+1;14.00;M1202;Retraité ancien agriculteur exploitant
+2;13.67;M1202;Retraité  cadre-profession intermediaire
+5;13.61;M1202;Agriculteur exploitant
+6;13.33;M1202;Commercant et assimile
+20;13.05;M1202;Professeur, profession scientifique
+19;12.37;M1202;Cadre administratif et commercial d'entr
+6;12.36;M1202;Non renseigne (inconnu)
+6;12.09;M1202;Personne sans activite professionnelle
+4;12.05;M1202;Ouvrier non qualifie
+9;11.83;M1202;Profession interm adm de la fonction pub
+14;11.69;M1202;Employe civil-agent de service de la FP
+2;11.56;M1202;Ouvriers qualifiés manutention magasin
+27;11.51;M1202;Ingenieur cadre technique d'entreprise
+22;11.10;M1202;Technicien
+10;11.05;M1202;Employe de commerce
+10;10.89;M1202;Person. service direct aux particuliers
+10;10.86;M1202;Profession interm sante et  trav. social
+7;10.68;M1202;Artisan
+9;10.62;M1202;Ouvriers qualifiés de type industriel
+18;10.54;M1202;Ouvrier qualifie
+2;10.47;M1202;Retraité cadre
+3;10.44;M1202;Policier et militaire
+13;10.36;M1202;Cadre de la fonction publique
+3;10.21;M1202;Retraité ancien  employé et ouvrier
+2;9.89;M1202;Retraité employé
+8;9.49;M1202;Contremaitre-agent de maitrise
+2;9.34;M1202;Retraité artisan-commerce-chef entrepris
+1;9.20;M1202;Ouvriers qualifiés de type artisanal
+5;9.14;M1202;Profession liberale
+1;8.52;M1202;Retraité profession intermédiaire
+7;8.35;M1202;Profession interm adm et commerc. entrep
+3;7.74;M1202;Sans profession -60 ans (hors retraité)
+1;7.20;M1202;Chef entreprise 10 salaries ou plus
+1;7.10;M1202;Ouvriers non qualifiés type industrie
+2;13.88;M1203;Retraité cadre
+1;13.83;M1203;Ouvriers qualifiés de type artisanal
+2;13.67;M1203;Retraité  cadre-profession intermediaire
+1;13.50;M1203;Chef entreprise 10 salaries ou plus
+2;13.34;M1203;Retraité employé
+2;12.75;M1203;Ouvriers qualifiés manutention magasin
+3;12.53;M1203;Sans profession -60 ans (hors retraité)
+9;12.42;M1203;Profession interm adm de la fonction pub
+10;12.18;M1203;Employe administratif d'entreprise
+1;12.17;M1203;Retraité profession intermédiaire
+6;12.01;M1203;Commercant et assimile
+3;11.89;M1203;Retraité ancien  employé et ouvrier
+9;11.62;M1203;Ouvriers qualifiés de type industriel
+20;11.56;M1203;Professeur, profession scientifique
+19;11.45;M1203;Cadre administratif et commercial d'entr
+10;11.07;M1203;Profession interm sante et  trav. social
+3;10.92;M1203;Policier et militaire
+10;10.81;M1203;Employe de commerce
+5;10.78;M1203;Profession liberale
+14;10.56;M1203;Employe civil-agent de service de la FP
+7;10.51;M1203;Artisan
+13;10.43;M1203;Cadre de la fonction publique
+7;10.32;M1203;Profession interm adm et commerc. entrep
+22;10.30;M1203;Technicien
+27;10.23;M1203;Ingenieur cadre technique d'entreprise
+17;10.21;M1203;Ouvrier qualifie
+8;10.02;M1203;Contremaitre-agent de maitrise
+10;10.01;M1203;Person. service direct aux particuliers
+6;9.92;M1203;Personne sans activite professionnelle
+5;9.85;M1203;Agriculteur exploitant
+4;9.81;M1203;Ouvrier non qualifie
+2;9.67;M1203;Retraité artisan-commerce-chef entrepris
+1;9.67;M1203;Retraité ancien agriculteur exploitant
+1;9.50;M1203;Ouvriers non qualifiés type industrie
+5;9.22;M1203;Non renseigne (inconnu)
+2;15.13;M1204;Retraité cadre
+3;13.75;M1204;Policier et militaire
+1;13.67;M1204;Chef entreprise 10 salaries ou plus
+9;13.33;M1204;Profession interm adm de la fonction pub
+3;13.25;M1204;Sans profession -60 ans (hors retraité)
+9;12.94;M1204;Ouvriers qualifiés de type industriel
+6;12.93;M1204;Commercant et assimile
+6;12.81;M1204;Personne sans activite professionnelle
+14;12.68;M1204;Employe civil-agent de service de la FP
+5;12.60;M1204;Agriculteur exploitant
+10;12.59;M1204;Employe administratif d'entreprise
+20;12.50;M1204;Professeur, profession scientifique
+2;12.50;M1204;Retraité employé
+1;12.25;M1204;Retraité profession intermédiaire
+10;12.18;M1204;Person. service direct aux particuliers
+10;12.06;M1204;Profession interm sante et  trav. social
+6;11.96;M1204;Non renseigne (inconnu)
+10;11.91;M1204;Employe de commerce
+13;11.89;M1204;Cadre de la fonction publique
+22;11.86;M1204;Technicien
+5;11.83;M1204;Profession liberale
+2;11.80;M1204;Retraité  cadre-profession intermediaire
+3;11.75;M1204;Retraité ancien  employé et ouvrier
+27;11.59;M1204;Ingenieur cadre technique d'entreprise
+18;11.56;M1204;Ouvrier qualifie
+1;11.50;M1204;Ouvriers non qualifiés type industrie
+19;11.47;M1204;Cadre administratif et commercial d'entr
+1;11.25;M1204;Ouvriers qualifiés de type artisanal
+4;11.23;M1204;Ouvrier non qualifie
+2;11.13;M1204;Retraité artisan-commerce-chef entrepris
+7;11.06;M1204;Artisan
+7;11.00;M1204;Profession interm adm et commerc. entrep
+8;10.74;M1204;Contremaitre-agent de maitrise
+2;9.75;M1204;Ouvriers qualifiés manutention magasin
+1;6.67;M1204;Retraité ancien agriculteur exploitant
+2;15.60;M1205;Retraité  cadre-profession intermediaire
+1;15.50;M1205;Retraité profession intermédiaire
+1;15.00;M1205;Ouvriers qualifiés de type artisanal
+10;14.50;M1205;Profession interm sante et  trav. social
+2;14.25;M1205;Retraité employé
+5;14.24;M1205;Agriculteur exploitant
+9;14.11;M1205;Profession interm adm de la fonction pub
+3;14.07;M1205;Policier et militaire
+7;14.02;M1205;Profession interm adm et commerc. entrep
+5;13.81;M1205;Profession liberale
+2;13.75;M1205;Retraité cadre
+19;13.69;M1205;Cadre administratif et commercial d'entr
+3;13.67;M1205;Sans profession -60 ans (hors retraité)
+10;13.53;M1205;Employe administratif d'entreprise
+20;13.53;M1205;Professeur, profession scientifique
+14;13.53;M1205;Employe civil-agent de service de la FP
+2;13.50;M1205;Ouvriers qualifiés manutention magasin
+22;13.35;M1205;Technicien
+13;13.30;M1205;Cadre de la fonction publique
+1;13.17;M1205;Retraité ancien agriculteur exploitant
+6;13.12;M1205;Commercant et assimile
+6;13.11;M1205;Personne sans activite professionnelle
+6;13.05;M1205;Non renseigne (inconnu)
+9;12.83;M1205;Ouvriers qualifiés de type industriel
+7;12.79;M1205;Artisan
+2;12.75;M1205;Retraité artisan-commerce-chef entrepris
+10;12.68;M1205;Employe de commerce
+4;12.66;M1205;Ouvrier non qualifie
+27;12.57;M1205;Ingenieur cadre technique d'entreprise
+3;12.54;M1205;Retraité ancien  employé et ouvrier
+1;12.53;M1205;Chef entreprise 10 salaries ou plus
+18;12.43;M1205;Ouvrier qualifie
+10;12.20;M1205;Person. service direct aux particuliers
+1;12.00;M1205;Ouvriers non qualifiés type industrie
+8;11.83;M1205;Contremaitre-agent de maitrise
+1;15.58;M1206;Retraité profession intermédiaire
+3;15.06;M1206;Policier et militaire
+1;15.00;M1206;Chef entreprise 10 salaries ou plus
+4;14.92;M1206;Ouvrier non qualifie
+6;14.63;M1206;Personne sans activite professionnelle
+5;14.48;M1206;Agriculteur exploitant
+2;14.46;M1206;Retraité employé
+1;14.25;M1206;Retraité ancien agriculteur exploitant
+3;13.95;M1206;Retraité ancien  employé et ouvrier
+9;13.85;M1206;Profession interm adm de la fonction pub
+5;13.65;M1206;Profession liberale
+9;13.37;M1206;Ouvriers qualifiés de type industriel
+19;13.37;M1206;Cadre administratif et commercial d'entr
+20;13.30;M1206;Professeur, profession scientifique
+6;13.29;M1206;Commercant et assimile
+2;13.19;M1206;Retraité  cadre-profession intermediaire
+13;13.15;M1206;Cadre de la fonction publique
+14;13.15;M1206;Employe civil-agent de service de la FP
+8;13.15;M1206;Contremaitre-agent de maitrise
+2;13.13;M1206;Retraité cadre
+22;13.10;M1206;Technicien
+3;12.97;M1206;Sans profession -60 ans (hors retraité)
+10;12.95;M1206;Employe de commerce
+10;12.93;M1206;Profession interm sante et  trav. social
+27;12.88;M1206;Ingenieur cadre technique d'entreprise
+2;12.84;M1206;Retraité artisan-commerce-chef entrepris
+18;12.78;M1206;Ouvrier qualifie
+10;12.70;M1206;Employe administratif d'entreprise
+7;12.67;M1206;Artisan
+6;12.45;M1206;Non renseigne (inconnu)
+10;12.03;M1206;Person. service direct aux particuliers
+7;11.71;M1206;Profession interm adm et commerc. entrep
+1;11.58;M1206;Ouvriers qualifiés de type artisanal
+2;11.46;M1206;Ouvriers qualifiés manutention magasin
+1;11.08;M1206;Ouvriers non qualifiés type industrie
+1;16.50;M1207;Ouvriers qualifiés de type artisanal
+3;16.46;M1207;Policier et militaire
+2;16.00;M1207;Retraité cadre
+2;15.82;M1207;Retraité  cadre-profession intermediaire
+1;15.50;M1207;Ouvriers non qualifiés type industrie
+10;15.29;M1207;Profession interm sante et  trav. social
+5;15.28;M1207;Profession liberale
+2;15.19;M1207;Retraité artisan-commerce-chef entrepris
+3;15.04;M1207;Retraité ancien  employé et ouvrier
+10;14.82;M1207;Person. service direct aux particuliers
+6;14.81;M1207;Personne sans activite professionnelle
+2;14.57;M1207;Retraité employé
+22;14.57;M1207;Technicien
+18;14.49;M1207;Ouvrier qualifie
+7;14.36;M1207;Profession interm adm et commerc. entrep
+3;14.25;M1207;Sans profession -60 ans (hors retraité)
+19;14.22;M1207;Cadre administratif et commercial d'entr
+6;14.06;M1207;Non renseigne (inconnu)
+7;13.95;M1207;Artisan
+2;13.94;M1207;Ouvriers qualifiés manutention magasin
+1;13.88;M1207;Chef entreprise 10 salaries ou plus
+6;13.83;M1207;Commercant et assimile
+9;13.82;M1207;Profession interm adm de la fonction pub
+5;13.80;M1207;Agriculteur exploitant
+14;13.79;M1207;Employe civil-agent de service de la FP
+27;13.60;M1207;Ingenieur cadre technique d'entreprise
+8;13.52;M1207;Contremaitre-agent de maitrise
+10;13.50;M1207;Employe de commerce
+13;13.39;M1207;Cadre de la fonction publique
+20;13.39;M1207;Professeur, profession scientifique
+10;13.29;M1207;Employe administratif d'entreprise
+9;13.28;M1207;Ouvriers qualifiés de type industriel
+1;13.25;M1207;Retraité profession intermédiaire
+1;12.38;M1207;Retraité ancien agriculteur exploitant
+4;12.25;M1207;Ouvrier non qualifie
