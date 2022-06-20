@@ -1,6 +1,6 @@
 set schema 'partie2';
 
-WbImport -file=/media/flguillou/SSD de Flo/Cours/SAE 2.04/data/v_candidatures.csv
+WbImport -file=/media/glavazais/SSD/Cours/SAE 2.04/data/v_candidatures.csv
         -type=text
         -table=_individu
         -mode=update,insert
